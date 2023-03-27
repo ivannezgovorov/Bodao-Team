@@ -1,0 +1,24 @@
+.header{
+    margin-top: 10px;
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__adress{
+        display: flex;
+        align-items: center;
+        column-gap: 21px;
+        p{
+            @include text(500, 16px, 150%, #fff);
+        }
+    }
+    &__number{
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        p{
+            @include text(700,20px,150%,#fff);
+        }
+    }
+}
