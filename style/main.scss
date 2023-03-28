@@ -9,14 +9,17 @@
     text-decoration: none;
     font-family: 'Ubuntu';
     font-style: normal;
+    
+}
+body{
     background-color: black;
 }
 
 .container{
     max-width: 1291px;
     width: 100%;
-    margin-left: 315px;
-    margin-right: 314px;
+    margin:0 auto;
+    padding: 0 20px;
 }
 
 $darkorange: #F9BA50;
@@ -29,3 +32,4 @@ $darkorange: #F9BA50;
 }
 
 @import "header";
+@import "sign";

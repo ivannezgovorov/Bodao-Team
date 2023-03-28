@@ -9,14 +9,17 @@
   text-decoration: none;
   font-family: "Ubuntu";
   font-style: normal;
+}
+
+body {
   background-color: black;
 }
 
 .container {
   max-width: 1291px;
   width: 100%;
-  margin-left: 315px;
-  margin-right: 314px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .header {
@@ -65,5 +68,79 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
+  color: #fff;
+}
+
+.sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("/img/portrait-male-boxer-posing 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 750px;
+  margin-top: 30px;
+  padding-top: 85px;
+}
+.sign__pretitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: #fff;
+  max-width: 330px;
+}
+.sign__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 120%;
+  color: #fff;
+  -webkit-column-gap: 74px;
+     -moz-column-gap: 74px;
+          column-gap: 74px;
+  margin: 154px 0px 197px;
+}
+.sign__aftertitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 493px;
+     -moz-column-gap: 493px;
+          column-gap: 493px;
+}
+.sign__bottom {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+  max-width: 410px;
+}
+.sign__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 17px 40px;
+  width: 277px;
+  border-radius: 0px 20px 20px 0px;
+  -webkit-column-gap: 54px;
+     -moz-column-gap: 54px;
+          column-gap: 54px;
+  background: #F9BA50;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
   color: #fff;
 }
