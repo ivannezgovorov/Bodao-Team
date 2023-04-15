@@ -1,0 +1,42 @@
+.about{
+    display: flex;
+    margin-top: 150px;
+    
+    &__img{
+        margin-right:150px
+    }
+
+    &__description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__title{
+        @include text(700, 61px, 86.4px, #FFFFFF);
+        margin-bottom: 60px
+    }
+    &__description-title{
+        @include text(500, 15px, 30.6px, #fff);
+        margin-bottom: 80px;
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        padding: 17px 40px;
+        width: 277px;
+        border-radius: 0px 20px 20px 0px;
+        column-gap: 54px;
+        background: $darkorange;
+        border: none;
+        @include text(500, 18px, 21px, #fff);
+    }
+    &__img-absolute{
+        position: absolute;
+        border: solid #fff;
+        border-radius: 250px;
+        padding: 18px;
+        left: 400px;
+        top: 1561px;
+        
+    }
+}
