@@ -451,3 +451,33 @@ down not good code, i don't know why this class not correct work in category.scs
   margin-left: 30px;
   margin-bottom: 40px;
 }
+
+.instagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.instagram__title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 86.4px;
+  color: #fff;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.instagram__photo-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+.instagram__photo-cards__card {
+  max-width: 410px;
+  max-height: 410px;
+}

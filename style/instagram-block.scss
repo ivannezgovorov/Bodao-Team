@@ -1,0 +1,19 @@
+.instagram{
+    display: flex;
+    flex-direction: column;
+
+    &__title{
+        @include text(700, 72px, 86.4px, #fff);
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+    &__photo-cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        &__card{
+            max-width: 410px;
+            max-height: 410px;
+        }
+    }
+}
