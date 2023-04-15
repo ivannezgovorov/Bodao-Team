@@ -1,0 +1,35 @@
+.category{
+    display: flex;
+    @include text(500, 50px, 57.6px, #fff);
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke: 2px #fff;
+    margin-top: 100px;
+    &__one{
+        min-width: 480px;
+        min-height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.one{
+    background-image: url("/img/Rectangle\ 27.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.two{
+    background-image: url("/img/Rectangle\ 28.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.three{
+    background-image: url("/img/Rectangle\ 26.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.four{
+    background-image: url("/img/Rectangle\ 29.png");
+    background-repeat: no-repeat;
+    
+}

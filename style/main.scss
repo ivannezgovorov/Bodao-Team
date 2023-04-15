@@ -32,8 +32,20 @@ $darkorange: #F9BA50;
     line-height: $lh;
     color: $cr;
 }
+/*
+down not good code, i don't know why this class not correct work in category.scss
+*/
+
+.category-title{
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 86.4px;
+    color: #fff;
+    margin-top: 150px;
+}
 
 @import "header";
 @import "sign";
 @import "about";
 @import "trainers";
+@import "category";
