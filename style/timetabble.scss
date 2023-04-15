@@ -1,0 +1,73 @@
+.timetabble{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+
+    &__title{
+        @include text(700, 72px, 86.4px, #fff);
+    }
+    
+    &__cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 100px;
+    }
+    &__card{
+        display:flex;
+        flex-direction: column;
+        background-color: #17171A;
+        max-width: 410px;
+        max-height: 540px;
+        &-head{
+            display: flex;
+            margin-left:30px;
+            margin-top:30px;
+            margin-bottom:50px;
+            align-items: baseline;
+            &-howmuch{
+                @include text(700, 36px, 43.2px, #fff);
+                
+            }
+            &-howmuchInWeek{
+                @include text(400, 16px, 19.2px, #fff);
+                margin-left:110px;
+                margin-right: 30px;
+            }
+        }
+        &-description{
+            @include text(500, 18px, 27px, #fff);
+            margin-left: 30px;
+            margin-bottom: 60px;
+        }
+        &-price{
+            display: flex;
+            margin-left:30px;
+            margin-top:30px;
+            margin-bottom:30px;
+            align-items: baseline;
+            &__newprice{
+                @include text(700, 36px, 43.2px, #fff);
+            }
+            &__oldprice{
+                @include text(700, 24px, 28.8px, #fff);
+                text-decoration: line-through;
+                margin-left:113px;
+                margin-right: 30px;
+            }
+        }
+        &-button{
+            display: flex;
+            align-items: center;
+            padding: 17px 40px;
+            width: 277px;
+            border-radius: 0px 20px 20px 0px;
+            column-gap: 54px;
+            background: $darkorange;
+            border: none;
+            @include text(500, 18px, 21px, #fff);
+            margin-left: 30px;
+            margin-bottom: 40px;
+        }
+    }
+}
