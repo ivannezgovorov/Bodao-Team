@@ -1,0 +1,126 @@
+.footer{
+display: flex;
+margin-top: 150px;
+gap: 149px;
+
+
+
+    // first gap //
+
+    &__social{
+        display: flex;
+        flex-direction: column;
+
+        &-description{
+            @include text(500, 18px, 27px, #fff);
+            margin-top: 20px;
+            margin-bottom: 43px;
+        }
+        &-social{
+            display: flex;
+            gap: 48px;
+        }
+        &-politics{
+            @include text(400, 16px, 24px, #fff);
+            margin-top: 44px;
+        }
+    }
+    
+    // second gap //
+
+    &__category{
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+
+        &-title{
+            @include text(500, 20px, 24px, #fff);
+        }
+        &-category{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 63px
+        }
+
+        &-about{
+            @include text(400, 18px, 21.6px, #fff);
+        }
+
+        &-trainers{
+            @include text(400, 18px, 21.6px, #fff);
+        }
+        &-direction{
+            @include text(400, 18px, 21.6px, #fff);
+        }
+        &-time{
+            @include text(400, 18px, 21.6px, #fff);
+        }
+    }
+
+    // third gap //
+
+    &__contacts{
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+
+        &-title{
+            @include text(500, 20px, 24px, #fff);
+            margin-bottom: 63px;
+        }
+
+        &-block{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        
+            &-number{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+                &-text{
+                @include text(700,12px, 13.79px, #F9BA50);
+                }
+
+                &-number{
+                    @include text(700,18px, 20.68px, #fff);
+                }
+            }
+
+            &-email{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+                &-text{
+                @include text(700,12px, 13.79px, #F9BA50);
+                }
+
+                &-email{
+                    @include text(700,18px, 20.68px, #fff);
+                }
+            }
+
+            &-adress{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+                &-text{
+                @include text(700,12px, 13.79px, #F9BA50);
+                }
+
+                &-adress{
+                    @include text(700,18px, 20.68px, #fff);
+                }
+            }
+        }
+        &-adress{
+            @include text(700, 18px, 20.68px, #fff);
+            margin-top: 36px;
+            margin-bottom: 139px;
+        }
+    }
+}
