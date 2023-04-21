@@ -12,6 +12,9 @@
         p{
             @include text(500, 16px, 150%, #fff);
         }
+        &-locate-ipad{
+            display: none;
+        }
     }
     &__number{
         display: flex;
@@ -20,5 +23,49 @@
         p{
             @include text(700,20px,150%,#fff);
         }
+        &-icon-ipad{
+            display: none;
+        }
     }
+}
+
+// down ONLY FOR IPAD//
+@media screen and (max-width: 750px){
+    .header{
+        margin-top:20px;
+        &__nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__adress{
+            display: flex;
+            align-items: center;
+            column-gap: 13px;
+            p{
+                @include text(500, 14px, 21px, #fff);
+            }
+            &-locate{
+                display: none;
+            }
+            &-locate-ipad{
+                display: contents;
+            }
+        }
+        &__number{
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            p{
+                @include text(700, 16px, 24px,#fff);
+            }
+            &-icon{
+                display: none;
+            }
+            &-icon-ipad{
+                display: contents;
+            }
+        }
+    }
+    
 }
