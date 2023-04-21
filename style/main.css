@@ -250,6 +250,87 @@ down not good code, i don't know why this class not correct work in category.scs
   line-height: 21px;
   color: #fff;
 }
+@media screen and (max-width: 750px) {
+  .sign .sign {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: url("/img/portrait-male-boxer-posing 1-2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 60px;
+    padding-top: 60px;
+  }
+  .sign .sign__pretitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #fff;
+    max-width: 222px;
+  }
+  .sign .sign__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 120%;
+    color: #fff;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+    margin: 77px 0px;
+  }
+  .sign .sign__aftertitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 71px;
+       -moz-column-gap: 71px;
+            column-gap: 71px;
+  }
+  .sign .sign__bottom {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    max-width: 380px;
+  }
+  .sign .sign__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 17px 40px;
+    width: 277px;
+    border-radius: 0px 20px 20px 0px;
+    -webkit-column-gap: 54px;
+       -moz-column-gap: 54px;
+            column-gap: 54px;
+    background: #F9BA50;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+  }
+}
 
 .about {
   display: -webkit-box;

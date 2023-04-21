@@ -39,4 +39,51 @@
         @include text(500, 18px, 21px, #fff);
     }
 
+    //Down ONLY FOR IPAD//
+
+    @media screen and (max-width: 750px) {
+        .sign{
+            display: flex;
+            flex-direction: column;
+            background-image: url("/img/portrait-male-boxer-posing\ 1-2.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-top: 60px;
+            padding-top: 60px;
+            
+            
+            &__pretitle{
+                @include text(700, 16px, 20.8px, #fff);
+                max-width: 222px;
+            }
+            &__title{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include text(700, 72px, 120%, #fff);
+                column-gap: 10px;
+                margin: 77px 0px;
+            }
+            &__aftertitle{
+                display: flex;
+                align-items: center;
+                column-gap: 71px;
+            }
+            &__bottom{
+                @include text(500, 16px, 24px, #fff);
+                max-width: 380px;
+            }
+            &__btn{
+                display: flex;
+                align-items: center;
+                padding: 17px 40px;
+                width: 277px;
+                border-radius: 0px 20px 20px 0px;
+                column-gap: 54px;
+                background: $darkorange;
+                border: none;
+                @include text(500, 18px, 21px, #fff);
+            }
+        }
+    }
 }
