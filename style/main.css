@@ -339,7 +339,10 @@ down not good code, i don't know why this class not correct work in category.scs
   margin-top: 150px;
 }
 .about__img {
-  margin-right: 150px;
+  margin-right: 119px;
+}
+.about__img-ipad {
+  display: none;
 }
 .about__description {
   display: -webkit-box;
@@ -396,6 +399,79 @@ down not good code, i don't know why this class not correct work in category.scs
   top: 1561px;
 }
 
+@media screen and (max-width: 750px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 80px;
+  }
+  .about__img {
+    margin-right: 20px;
+  }
+  .about__img-pc {
+    display: block;
+    max-width: 354px;
+    max-height: 436px;
+  }
+  .about__img-ipad {
+    display: content;
+  }
+  .about__description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43.2px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+  }
+  .about__description-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27.2px;
+    color: #fff;
+    margin-bottom: 80px;
+  }
+  .about__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 17px 40px;
+    width: 277px;
+    border-radius: 0px 20px 20px 0px;
+    -webkit-column-gap: 54px;
+       -moz-column-gap: 54px;
+            column-gap: 54px;
+    background: #F9BA50;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+  }
+  .about__img-absolute {
+    position: absolute;
+    border: solid #fff;
+    border-radius: 250px;
+    padding: 18px;
+    left: 400px;
+    top: 1561px;
+  }
+}
 .trainers {
   display: -webkit-box;
   display: -ms-flexbox;

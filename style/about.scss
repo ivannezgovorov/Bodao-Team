@@ -3,7 +3,10 @@
     margin-top: 150px;
     
     &__img{
-        margin-right:150px
+        margin-right:119px;
+        &-ipad{
+            display: none;
+        }
     }
 
     &__description{
@@ -39,4 +42,62 @@
         top: 1561px;
         
     }
+}
+
+//Down ONLY FOR IPAD//
+
+@media screen and (max-width: 750px) {
+    .about{
+        display: flex;
+        margin-top: 80px;
+        
+        &__img{
+            margin-right:20px;
+            &-pc{
+                    display: block;
+                    max-width: 354px;
+                    max-height: 436px;
+                }
+            &-ipad
+                {
+                    display: content;
+    
+                }
+        }
+    
+        &__description{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__title{
+            @include text(700, 36px, 43.2px, #FFFFFF);
+            margin-bottom: 40px
+        }
+        &__description-title{
+            @include text(500, 16px, 27.2px, #fff);
+            margin-bottom: 80px;
+        }
+        &__btn{
+            display: flex;
+            align-items: center;
+            padding: 17px 40px;
+            width: 277px;
+            border-radius: 0px 20px 20px 0px;
+            column-gap: 54px;
+            background: $darkorange;
+            border: none;
+            @include text(500, 18px, 21px, #fff);
+        }
+        &__img-absolute{
+            position: absolute;
+            border: solid #fff;
+            border-radius: 250px;
+            padding: 18px;
+            left: 400px;
+            top: 1561px;
+            
+        }
+    }
+    
 }
